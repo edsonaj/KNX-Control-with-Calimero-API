@@ -11,19 +11,15 @@ Set-up Instructions
 To make this work, you have to make some changes:
 
 1. Change the IP address of the KNXnet/IP device in line 40 of the Main class:
-	`new InetSocketAddress("192.168.1.3",`
+	new InetSocketAddress("192.168.1.3",
 2. Change the BUS Address of the device you want to control in line 28 of the Main class:
-	`String Address = "1/5/217";`
+	String Address = "1/5/217";
 3. If you want to turn ON (Enable) the device, change the line 66 to:
-	`object.setASDUfromString(Enable);`
+	object.setASDUfromString(Enable);
 4. If you want to turn OFF (Disable) the device, change the line 66 to:
-	`object.setASDUfromString(Disable);`
+	object.setASDUfromString(Disable);
 
 **Observation**
 
 Use ETS Software to change the IP Address of the KNXnet/IP device to a static one, or grab it's MAC Address and create a Reservation in your DHCP Server.
 
-Licensing
----------
-
-Re-use of my code is fine under a Creative Commons 3.0 [Non-commercial, Attribution, Share-Alike](http://creativecommons.org/licenses/by-nc-sa/3.0/) license. In short, this means that you can use my code, modify it, do anything you want. Just don't sell it and make sure to give me a shout-out. Also, you must license your derivatives under a compatible license (sorry, no closed-source derivatives). If you would like to purchase a more permissive license (for a closed-source and/or commercial license), please contact me directly. See the Creative Commons site for more information.
